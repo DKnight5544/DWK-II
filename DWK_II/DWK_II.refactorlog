@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="aeaa12f7-4c93-4881-b889-ed1c2414c648" ChangeDateTime="09/24/2019 04:18:31">
+    <Property Name="ElementName" Value="[dbo].[Timer].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Timer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TimerID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d8fb2000-8c47-4eb0-8b03-677ddec6855f" ChangeDateTime="09/24/2019 04:49:48">
+    <Property Name="ElementName" Value="[dbo].[Timer].[IX_Timer_Column]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[dbo].[Timer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[UIX_Timer_ReadOnlyKey]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4701b653-4c6d-4fcc-9322-90da2f730c6d" ChangeDateTime="09/24/2019 04:53:24">
+    <Property Name="ElementName" Value="[tt].[Folder].[ParentFolderID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Folder]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ParentReadWriteKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9f90607d-2e42-41a9-864a-905c9b951a9e" ChangeDateTime="09/26/2019 04:46:13">
+    <Property Name="ElementName" Value="[tt].[Folder].[ParentFolderID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Folder]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ParentKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="49838521-12d3-45e1-b776-5750280e84b7" ChangeDateTime="09/26/2019 04:49:06">
+    <Property Name="ElementName" Value="[tt].[Timer].[ParentFolderID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Timer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ParentFolderKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9b061577-86f8-45ab-90dc-9d9b652ea651" ChangeDateTime="09/26/2019 04:49:24">
+    <Property Name="ElementName" Value="[tt].[Timer].[ParentFolderKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Timer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ParentKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d4280b1f-5aae-4058-83af-567d29df7449" ChangeDateTime="09/26/2019 13:13:38">
+    <Property Name="ElementName" Value="[dbo].[FolderTimer].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FolderTimer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ParentKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="197774db-ca30-4e5b-a358-d52d29de2ff7" ChangeDateTime="10/22/2019 14:33:11">
+    <Property Name="ElementName" Value="[tt].[Folder].[OwnerID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Folder]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8a1ad695-696c-48ff-a115-c5cb580929ae" ChangeDateTime="10/22/2019 14:43:47">
+    <Property Name="ElementName" Value="[tt].[Relationship].[IsChildATimer]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Relationship]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsTimer" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4efe3dbd-4b2c-4fe2-ac60-bb657c56e83a" ChangeDateTime="10/22/2019 14:49:18">
+    <Property Name="ElementName" Value="[tt].[Relationship].[OwnerID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Relationship]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="aa18fc92-4e75-4f46-854c-cb9dd317cf14" ChangeDateTime="10/22/2019 15:43:18">
+    <Property Name="ElementName" Value="[tt].[Relationship].[ParentKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Relationship]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ParentID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e45980c9-708f-4112-a550-b6e7eced36ae" ChangeDateTime="10/22/2019 15:43:31">
+    <Property Name="ElementName" Value="[tt].[Relationship].[ChildKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Relationship]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ChildID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="89314c3e-f42d-4185-9e84-44756ea493ab" ChangeDateTime="11/15/2019 23:37:55">
+    <Property Name="ElementName" Value="[tt].[Relationship].[ParentID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Relationship]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FolderID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3260bfd0-a49d-4acc-90bd-247dbdea98b7" ChangeDateTime="11/15/2019 23:38:04">
+    <Property Name="ElementName" Value="[tt].[Relationship].[ChildID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Relationship]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TimerID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e6656f3c-19d8-45af-955e-267b8798efd3" ChangeDateTime="11/22/2019 03:45:27">
+    <Property Name="ElementName" Value="[tt].[User].[FacebookID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="369f947c-fe7c-4c03-b325-7f1cb9c20b2c" ChangeDateTime="12/08/2019 22:01:14">
+    <Property Name="ElementName" Value="[tt].[User]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[tt]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="Page" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c98130c9-8bdc-4445-b9c5-366a05ded410" ChangeDateTime="12/08/2019 22:01:43">
+    <Property Name="ElementName" Value="[tt].[Page].[UserID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Page]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PageID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b95a554f-0053-4518-a356-54452508b762" ChangeDateTime="12/08/2019 22:02:05">
+    <Property Name="ElementName" Value="[tt].[Page].[UserKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Page]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PageKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9593c326-119f-42c6-8846-9ef21377d20f" ChangeDateTime="12/08/2019 22:02:17">
+    <Property Name="ElementName" Value="[tt].[Page].[UserName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Page]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PageName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="018d79d1-5cfc-4747-be74-cb6f9d137868" ChangeDateTime="12/08/2019 22:40:58">
+    <Property Name="ElementName" Value="[tt].[Folder].[UserID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Folder]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PageID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="07ada7c4-ec09-4327-aea8-74c51434304f" ChangeDateTime="12/08/2019 22:44:48">
+    <Property Name="ElementName" Value="[tt].[Timer].[CreatedByUserID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Timer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[CreatedByPageID]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dcfffc2f-d9e6-49be-a407-3dd3fc761e8f" ChangeDateTime="12/09/2019 02:36:20">
+    <Property Name="ElementName" Value="[tt].[SelectUserByKey]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[tt]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[SelectPageByKey]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="85ee5b24-99ab-438f-af88-4afe57b55aba" ChangeDateTime="12/09/2019 02:36:59">
+    <Property Name="ElementName" Value="[tt].[InsertNewUser]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[tt]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[InsertNewPage]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="79d1d0d9-788c-4c71-bd3d-8e613286a7e2" ChangeDateTime="12/09/2019 02:37:59">
+    <Property Name="ElementName" Value="[tt].[SelectAllByUser]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[tt]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[SelectAllByPage]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="59787faa-92e9-41d9-b461-782c80e9beb8" ChangeDateTime="12/09/2019 02:38:49">
+    <Property Name="ElementName" Value="[tt].[UpdateFolder]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[tt]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[UpdateFolderName]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="57b2b108-6dc3-4766-bfda-23658467a67a" ChangeDateTime="12/09/2019 02:39:10">
+    <Property Name="ElementName" Value="[tt].[UpdateTimer]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[tt]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[UpdateTimerName]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3c5a3cd7-3a8a-4f0b-8a2c-cc01410c30ce" ChangeDateTime="07/17/2020 22:12:43">
+    <Property Name="ElementName" Value="[tt].[Timer].[CreatedByPageID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Timer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PageID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f7b72c17-ced4-4f0f-8eb1-9cd315746f2d" ChangeDateTime="07/27/2020 20:10:28">
+    <Property Name="ElementName" Value="[ll].[Links].[IsLocked]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[ll].[Links]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AllowEditing" />
+  </Operation>
+</Operations>
