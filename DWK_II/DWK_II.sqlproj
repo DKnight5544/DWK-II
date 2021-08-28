@@ -125,9 +125,6 @@
     <Folder Include="TimerToy_tt\Views" />
     <Folder Include="TimerToy_tt\Functions" />
     <Folder Include="Solution Items" />
-    <Folder Include="alotalinks_ll" />
-    <Folder Include="alotalinks_ll\Tables" />
-    <Folder Include="alotalinks_ll\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="TimerToy_tt\tt_schema.sql" />
@@ -144,19 +141,12 @@
     <Build Include="TimerToy_tt\Stored Procedures\ResetTimer.sql" />
     <Build Include="TimerToy_tt\Stored Procedures\UpdatePageName.sql" />
     <Build Include="TimerToy_tt\Stored Procedures\SelectPageData.sql" />
-    <Build Include="alotalinks_ll\ll_schema.sql" />
-    <Build Include="alotalinks_ll\Tables\Links.sql" />
-    <Build Include="alotalinks_ll\Stored Procedures\AddLink.sql" />
-    <Build Include="alotalinks_ll\Stored Procedures\GetLinks.sql" />
-    <Build Include="alotalinks_ll\Stored Procedures\EditLink.sql" />
-    <Build Include="alotalinks_ll\Stored Procedures\GetLink.sql" />
     <PostDeploy Include="Solution Items\Script.PostDeployment1.sql" />
-    <Build Include="alotalinks_ll\Stored Procedures\DeleteLink.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWK_II.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Solution Items\users.txt" />
+    <None Include="Solution Items\users.private" />
   </ItemGroup>
 </Project>
