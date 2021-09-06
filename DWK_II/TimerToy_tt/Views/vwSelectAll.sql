@@ -7,7 +7,6 @@ select
 	, t.TimerKey
 	, t.TimerDescription
 	, t.IsRunning
-	, t.IsBookmark
 	, t.SortIndex
 	, ElapsedTime = iif(t.IsRunning = 1, t.ElapsedTime + datediff(second, t.StartTime, getutcdate()), t.ElapsedTime)
 from tt.[Page] p
