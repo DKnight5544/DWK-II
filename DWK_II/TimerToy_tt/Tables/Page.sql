@@ -6,3 +6,6 @@
 )
 
 GO
+
+
+CREATE UNIQUE INDEX [UIX_Page] ON [tt].[Page] ([PageKey])
