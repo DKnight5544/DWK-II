@@ -12,7 +12,10 @@
 
 GO
 
-CREATE UNIQUE INDEX [UIX_Timer] ON [tt2].[Timer] ([TimerKey]) 
+CREATE UNIQUE INDEX [UIX_TimerKey] ON [tt2].[Timer] ([TimerKey]) 
+GO
+
+CREATE UNIQUE INDEX [UIX_ReadOnlyKey] ON [tt2].[Timer] ([ReadOnlyKey]) 
 GO
 
 ALTER TABLE [tt2].[Timer] ADD  CONSTRAINT [PK_Timer] PRIMARY KEY CLUSTERED

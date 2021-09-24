@@ -151,6 +151,13 @@
     <Build Include="TimerToy_tt2\tt_schema.sql" />
     <Build Include="TimerToy_tt2\Stored Procedures\AddRootTimer.sql" />
     <Build Include="TimerToy_tt2\Views\TimerView.sql" />
+    <Build Include="TimerToy_tt2\Stored Procedures\AddTimer.sql" />
+    <Build Include="TimerToy_tt2\Views\TimerModel.sql" />
+    <Build Include="TimerToy_tt2\Stored Procedures\GetTimer.sql" />
+    <Build Include="TimerToy_tt2\Stored Procedures\GetChildren.sql" />
+    <Build Include="TimerToy_tt2\Stored Procedures\ToggleTimer.sql" />
+    <Build Include="TimerToy_tt2\Functions\GetElapsedTime.sql" />
+    <Build Include="TimerToy_tt2\Functions\GetChildCount.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWK_II.refactorlog" />
