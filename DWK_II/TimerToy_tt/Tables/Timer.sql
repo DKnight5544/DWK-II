@@ -13,8 +13,5 @@
 
 GO
 
-CREATE INDEX [IX_SortIndex] ON [tt].[Timer] ([SortIndex])
-GO
-
 CREATE UNIQUE INDEX [UIX_PageTimer] ON [tt].[Timer] ([PageKey],[TimerKey]) 
 GO
