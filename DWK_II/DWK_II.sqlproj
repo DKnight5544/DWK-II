@@ -125,6 +125,11 @@
     <Folder Include="TimerToy_tt\Views" />
     <Folder Include="TimerToy_tt\Functions" />
     <Folder Include="Solution Items" />
+    <Folder Include="TimerToy_tt2" />
+    <Folder Include="TimerToy_tt2\Functions" />
+    <Folder Include="TimerToy_tt2\Stored Procedures" />
+    <Folder Include="TimerToy_tt2\Tables" />
+    <Folder Include="TimerToy_tt2\Views" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="TimerToy_tt\tt_schema.sql" />
@@ -142,6 +147,10 @@
     <Build Include="TimerToy_tt\Stored Procedures\UpdatePageName.sql" />
     <Build Include="TimerToy_tt\Stored Procedures\SelectPageData.sql" />
     <PostDeploy Include="Solution Items\Script.PostDeployment1.sql" />
+    <Build Include="TimerToy_tt2\Tables\Timer.sql" />
+    <Build Include="TimerToy_tt2\tt_schema.sql" />
+    <Build Include="TimerToy_tt2\Stored Procedures\AddRootTimer.sql" />
+    <Build Include="TimerToy_tt2\Views\TimerView.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWK_II.refactorlog" />
