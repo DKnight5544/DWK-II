@@ -158,6 +158,10 @@
     <Build Include="TimerToy_tt2\Stored Procedures\ToggleTimer.sql" />
     <Build Include="TimerToy_tt2\Functions\GetElapsedTime.sql" />
     <Build Include="TimerToy_tt2\Functions\GetChildCount.sql" />
+    <Build Include="TimerToy_tt2\Stored Procedures\AdustTimer.sql" />
+    <Build Include="TimerToy_tt2\Stored Procedures\ResetTimer.sql" />
+    <Build Include="TimerToy_tt2\Stored Procedures\DeleteTimer.sql" />
+    <Build Include="TimerToy_tt2\Stored Procedures\RenameTimer.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWK_II.refactorlog" />

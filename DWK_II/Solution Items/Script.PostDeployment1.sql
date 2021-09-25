@@ -14,3 +14,18 @@ grant execute on tt.ToggleTimer to TimerToysApp
 grant execute on tt.UpdatePageName to TimerToysApp
 grant execute on tt.UpdateTimerName to TimerToysApp
 grant execute on tt.SelectPageData to TimerToysApp
+
+-- TT2
+
+grant view definition on tt2.TimerModel to TimerToysApp
+
+grant execute on tt2.AddRootTimer to TimerToysApp
+grant execute on tt2.AddTimer to TimerToysApp
+grant execute on tt2.GetChildren to TimerToysApp
+grant execute on tt2.GetTimer to TimerToysApp
+grant execute on tt2.ToggleTimer to TimerToysApp
+
+grant execute on tt2.AdjustTimer to TimerToysApp
+grant execute on tt2.ResetTimer to TimerToysApp
+grant execute on tt2.DeleteTimer to TimerToysApp
+grant execute on tt2.RenameTimer to TimerToysApp
