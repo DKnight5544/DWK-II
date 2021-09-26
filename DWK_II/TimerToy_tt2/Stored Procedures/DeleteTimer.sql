@@ -24,4 +24,6 @@ from tt2.Timer t
 where t.TimerKey = @TimerKey
 and @IsReadOnly = 0;
 
+exec tt2.GetTimer @TimerKey
+
 RETURN 0

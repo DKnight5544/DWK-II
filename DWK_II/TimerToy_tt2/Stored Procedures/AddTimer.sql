@@ -7,7 +7,7 @@ declare @TimerKey char(36)= convert(char(36), newid());
 -- ensure no dupes
 while exists (
 	select 1 from tt2.Timer t 
-	where t.TimerKey = @TimerKey or t.ParentKey = @TimerKey or t.ReadOnlyKey = @TimerKey) 
+	where t.TimerKey = @TimerKey or t.ReadOnlyKey = @TimerKey) 
 begin
 	select @TimerKey = convert(char(36), newid());
 end
@@ -17,7 +17,7 @@ declare @ReadOnlyKey char(36)= convert(char(36), newid());
 -- ensure no dupes
 while exists (
 	select 1 from tt2.Timer t 
-	where t.TimerKey = @ReadOnlyKey or t.ParentKey = @ReadOnlyKey or t.ReadOnlyKey = @ReadOnlyKey) 
+	where t.TimerKey = @ReadOnlyKey or t.ReadOnlyKey = @ReadOnlyKey) 
 begin
 	select @ReadOnlyKey = convert(char(36), newid());
 end
@@ -31,17 +31,20 @@ from tt2.Timer t
 where t.TimerKey = @ParentKey;
 
 
-insert into tt2.Timer(TimerKey, ReadOnlyKey, ParentKey, TimerName, StartTime, IsRunning, ElapsedTime, CreationTime)
+insert into tt2.Timer(TimerKey, ReadOnlyKey, TimerName, StartTime, IsRunning, ElapsedTime, CreationTime)
 select 
 	  [TimerKey] = @TimerKey
 	, [ReadOnlyKey] = @ReadOnlyKey
-	, [ParentKey] = @ParentKey
 	, [TimerName] = 'Click To Edit'
 	, [StartTime] = null
 	, [IsRunning] = 0
 	, [ElapsedTime] = 0
 	, [CreationTime] = GETUTCDATE();
 ;
+
+insert into tt2.ParentChild (ParentKey, ChildKey)
+select @ParentKey, @TimerKey
+where @ParentKey is not null
 
 exec tt2.GetTimer @TimerKey;
 

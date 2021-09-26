@@ -2,22 +2,16 @@
 	  @TimerKey char(36)
 AS
 
-declare @IsRunning bit;
-declare @ChildrenCount int;
+declare @IsRunning bit = (select t.IsRunning from tt2.Timer t where t.TimerKey = @TimerKey );
+declare @ChildrenCount int = tt2.GetChildCount(@TimerKey);
 
-select
-	@IsRunning = t.IsRunning
-	, @ChildrenCount = t.ChildCount
-from tt2.TimerView t
-where t.TimerKey = @TimerKey
-;
 
 if(@IsRunning = 0) begin
 
 	-- timer is toggeling to ON
 	update t set
-		  t.StartTime   = getutcdate()
-		, t.IsRunning   = 1
+		  t.StartTime = getutcdate()
+		, t.IsRunning = 1
 	from tt2.Timer t
 	where t.TimerKey = @TimerKey
 	and @ChildrenCount = 0
@@ -36,7 +30,7 @@ else begin
 	from tt2.Timer t
 	where t.TimerKey = @TimerKey
 	and @ChildrenCount = 0
-;
+	;
 
 end
 
