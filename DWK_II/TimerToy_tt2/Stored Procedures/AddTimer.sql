@@ -43,16 +43,6 @@ select
 	, [CreationTime] = GETUTCDATE();
 ;
 
-select 
-	  a.TimerKey
-	, a.TimerName
-	, a.IsRunning
-	, a.ChildCount
-	, a.CreationTime
-	, a.ElapsedTime
-	, IsReadOnly = convert(bit, 0)
-from tt2.TimerView a
-where a.ParentKey = @ParentKey
-and a.TimerKey = @TimerKey;
+exec tt2.GetTimer @TimerKey;
 
-return 0
+return
