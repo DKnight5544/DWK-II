@@ -163,6 +163,7 @@
     <Build Include="TimerToy_tt2\Stored Procedures\RenameTimer.sql" />
     <Build Include="TimerToy_tt2\Tables\ParentChild.sql" />
     <Build Include="TimerToy_tt2\Views\ElapsedTimeView.sql" />
+    <Build Include="TimerToy_tt2\Views\SelectAllView.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWK_II.refactorlog" />
