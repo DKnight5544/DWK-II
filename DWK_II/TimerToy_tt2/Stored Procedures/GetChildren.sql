@@ -9,11 +9,11 @@ select
 	, t.IsRunning
 	, ChildCount = tt2.GetChildCount(t.TimerKey)
 	, t.CreationTime
-	, ElapsedTime = tt2.GetElapsedTime(t.TimerKey)
+	, t.ElapsedTime
 	, IsReadOnly = convert(bit, iif(pc.ChildKey = t.TimerKey, 0, 1))
 
 from tt2.ParentChild pc
-join tt2.Timer t 
+join tt2.SelectAllView t 
 on t.TimerKey = pc.ChildKey or t.ReadOnlyKey = pc.ChildKey
 
 where pc.ParentKey = @ParentKey

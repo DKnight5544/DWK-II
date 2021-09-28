@@ -8,7 +8,7 @@ select
 	, t.CreationTime
 	, t.StartTime
 	, t.IsRunning
-	, ElapsedTime = tt2.GetElapsedTime(t.TimerKey)
+	, ElapsedTime = iif(t.IsRunning = 1, t.ElapsedTime + datediff(second, t.StartTime, getutcdate()), t.ElapsedTime)
 	, ChildCount = tt2.GetChildCount(t.TimerKey)
 
 from tt2.Timer t
