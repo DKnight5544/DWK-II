@@ -9,9 +9,10 @@ select
 	, t.IsRunning
 	, ChildCount = tt2.GetChildCount(t.TimerKey)
 	, t.CreationTime
-	, ElapsedTime = tt2.GetElapsedTime(t.TimerKey)
+	, t.ElapsedTime
 	, IsReadOnly = convert(bit, iif(@TimerKey = t.TimerKey, 0, 1))
-from tt2.Timer t
+
+from tt2.SelectAllView t
 where t.TimerKey = @TimerKey
 or t.ReadOnlyKey = @TimerKey;
 

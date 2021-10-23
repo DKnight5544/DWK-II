@@ -166,6 +166,7 @@
     <Build Include="TimerToy_tt2\Stored Procedures\RenameTimer.sql" />
     <Build Include="TimerToy_tt2\Tables\ParentChild.sql" />
     <Build Include="TimerToy_tt2\Views\ElapsedTimeView.sql" />
+    <Build Include="TimerToy_tt2\Views\SelectAllView.sql" />
     <Build Include="DomainSales\ds_schema.sql" />
     <Build Include="DomainSales\Tables\PotentialBuyer.sql" />
     <Build Include="DomainSales\Stored Procedures\AddPotentialBuyer.sql" />
