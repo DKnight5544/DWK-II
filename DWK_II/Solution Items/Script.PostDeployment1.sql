@@ -29,3 +29,7 @@ grant execute on tt2.AdjustTimer to TimerToysApp
 grant execute on tt2.ResetTimer to TimerToysApp
 grant execute on tt2.DeleteTimer to TimerToysApp
 grant execute on tt2.RenameTimer to TimerToysApp
+
+-- Domain Sales
+grant execute on ds.AddPotentialBuyer to TimerToysApp
+grant execute on ds.GetPotentialBuyers to TimerToysApp

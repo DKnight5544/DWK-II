@@ -20,7 +20,10 @@ if @TimerKey is null begin
 end
 
 update t
-set t.ElapsedTime = 0
+set 
+	t.ElapsedTime = 0
+	, t.StartTime = null
+	, t.IsRunning = 0
 from tt2.Timer t
 where t.TimerKey = @TimerKey
 and @IsReadOnly = 0;

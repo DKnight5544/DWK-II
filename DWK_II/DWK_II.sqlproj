@@ -130,6 +130,9 @@
     <Folder Include="TimerToy_tt2\Stored Procedures" />
     <Folder Include="TimerToy_tt2\Tables" />
     <Folder Include="TimerToy_tt2\Views" />
+    <Folder Include="DomainSales" />
+    <Folder Include="DomainSales\Tables" />
+    <Folder Include="DomainSales\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="TimerToy_tt\tt_schema.sql" />
@@ -163,6 +166,10 @@
     <Build Include="TimerToy_tt2\Stored Procedures\RenameTimer.sql" />
     <Build Include="TimerToy_tt2\Tables\ParentChild.sql" />
     <Build Include="TimerToy_tt2\Views\ElapsedTimeView.sql" />
+    <Build Include="DomainSales\ds_schema.sql" />
+    <Build Include="DomainSales\Tables\PotentialBuyer.sql" />
+    <Build Include="DomainSales\Stored Procedures\AddPotentialBuyer.sql" />
+    <Build Include="DomainSales\Stored Procedures\GetPotentialBuyers.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWK_II.refactorlog" />
