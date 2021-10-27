@@ -1,13 +1,13 @@
-﻿CREATE PROCEDURE [cl].[AddUser]
+﻿CREATE PROCEDURE [mlm].[AddUser]
 	@OldName varchar(50) NULL,
 	@NewName varchar(50)
 AS
 
 if(@OldName is null) select @OldName = 'WigiWiz'
 
-if not exists (select 1 from cl.Users u where u.LinkName00 = @NewName) 
+if not exists (select 1 from mlm.Users u where u.LinkName00 = @NewName) 
 begin
-	insert into cl.Users (
+	insert into mlm.Users (
 		  LinkName00
 		, LinkName01
 		, LinkName02
@@ -22,7 +22,7 @@ begin
 		, LinkName03 = u.LinkName02
 		, LinkName04 = u.LinkName03
 		, LinkName05 = u.LinkName04
-	from cl.Users u
+	from mlm.Users u
 	where u.LinkName00 = @OldName
 	;
 	
@@ -30,8 +30,8 @@ begin
 
 	update u2
 	set	u2.LinkCount += 1
-	from cl.Users u1
-	join cl.Users u2 
+	from mlm.Users u1
+	join mlm.Users u2 
 	on u2.LinkName00 = u1.LinkName01	
 	or u2.LinkName00 = u1.LinkName02	
 	or u2.LinkName00 = u1.LinkName03	
