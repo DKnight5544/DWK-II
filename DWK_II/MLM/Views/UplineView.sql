@@ -1,12 +1,13 @@
 ﻿CREATE VIEW [mlm].[UplineView] AS 
 
 select 
-	u1.UserName
-	, u1Name = u1.UplineName
-	, u2Name = u2.UplineName
-	, u3Name = u3.UplineName
-	, u4Name = u4.UplineName
-	, u5Name = u5.UplineName
+	  u1.UserName
+	, u1.DownlineCount
+	, u1Name = nullif(u1.UplineName, 'TOP')
+	, u2Name = nullif(u2.UplineName, 'TOP')
+	, u3Name = nullif(u3.UplineName, 'TOP')
+	, u4Name = nullif(u4.UplineName, 'TOP')
+	, u5Name = nullif(u5.UplineName, 'TOP')
 from mlm.Users u1  
 left join mlm.Users u2 on u2.UserName = u1.UplineName
 left join mlm.Users u3 on u3.UserName = u2.UplineName
