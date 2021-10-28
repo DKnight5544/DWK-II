@@ -1,44 +1,37 @@
 ﻿CREATE PROCEDURE [mlm].[AddUser]
-	@OldName varchar(50) NULL,
-	@NewName varchar(50)
+	@UplineName nvarchar(50),
+	@UserName nvarchar(50)
 AS
 
-if(@OldName is null) select @OldName = 'WigiWiz'
-
-if not exists (select 1 from mlm.Users u where u.LinkName00 = @NewName) 
-begin
-	insert into mlm.Users (
-		  LinkName00
-		, LinkName01
-		, LinkName02
-		, LinkName03
-		, LinkName04
-		, LinkName05
-	)
-	select
-		  LinkName00 = @NewName
-		, LinkName01 = u.LinkName00
-		, LinkName02 = u.LinkName01
-		, LinkName03 = u.LinkName02
-		, LinkName04 = u.LinkName03
-		, LinkName05 = u.LinkName04
+if(not exists(
+	select 1
 	from mlm.Users u
-	where u.LinkName00 = @OldName
-	;
-	
-	-- Now Update the user counts.
+	where u.UserName = @UserName
+)
 
-	update u2
-	set	u2.LinkCount += 1
-	from mlm.Users u1
-	join mlm.Users u2 
-	on u2.LinkName00 = u1.LinkName01	
-	or u2.LinkName00 = u1.LinkName02	
-	or u2.LinkName00 = u1.LinkName03	
-	or u2.LinkName00 = u1.LinkName04	
-	or u2.LinkName00 = u1.LinkName05
-	where u1.LinkName00 = @NewName
-	;
+and exists(
+	select 1
+	from mlm.Users u
+	where u.UserName = @UplineName
+))
 
+begin    
+
+-- first insert new user
+insert into mlm.Users (UserName, UplineName)
+select @UserName, @UplineName
+;
+
+-- now update the downline count.
+update u set u.DownlineCount += 1 from mlm.Users u where u.UserName = @UplineName;
+select @UplineName = u.UplineName from mlm.Users u where u.UserName = @UplineName;
+update u set u.DownlineCount += 1 from mlm.Users u where u.UserName = @UplineName;
+select @UplineName = u.UplineName from mlm.Users u where u.UserName = @UplineName;
+update u set u.DownlineCount += 1 from mlm.Users u where u.UserName = @UplineName;
+select @UplineName = u.UplineName from mlm.Users u where u.UserName = @UplineName;
+update u set u.DownlineCount += 1 from mlm.Users u where u.UserName = @UplineName;
+select @UplineName = u.UplineName from mlm.Users u where u.UserName = @UplineName;
+update u set u.DownlineCount += 1 from mlm.Users u where u.UserName = @UplineName;
 
 end
+

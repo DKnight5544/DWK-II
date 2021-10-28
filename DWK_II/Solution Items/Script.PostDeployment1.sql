@@ -34,6 +34,6 @@ grant execute on tt2.RenameTimer to TimerToysApp
 grant execute on ds.AddPotentialBuyer to TimerToysApp
 grant execute on ds.GetPotentialBuyers to TimerToysApp
 
--- Chain Letter
-grant execute on cl.AddUser to TimerToysApp
-grant execute on cl.GetUsers to TimerToysApp
+-- MLM
+grant execute on mlm.AddUser to TimerToysApp
+grant execute on mlm.GetUsers to TimerToysApp

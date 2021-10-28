@@ -203,4 +203,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Buyer" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="46bc953e-9400-4cb0-b32c-3ce2269f7ac0" ChangeDateTime="10/27/2021 23:27:56">
+    <Property Name="ElementName" Value="[mlm].[Users].[LinkName00]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mlm].[Users]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="57233658-0de6-4bd5-9ef6-dcd2562912d4" ChangeDateTime="10/27/2021 23:28:31">
+    <Property Name="ElementName" Value="[mlm].[Users].[LinkCount]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mlm].[Users]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DownlineCount" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="247a82f2-f0b9-41cc-81a0-83433247f5b7" ChangeDateTime="10/27/2021 23:28:48">
+    <Property Name="ElementName" Value="[mlm].[Users].[LinkName01]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[mlm].[Users]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UplineName" />
+  </Operation>
 </Operations>

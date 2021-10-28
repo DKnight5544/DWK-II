@@ -136,6 +136,7 @@
     <Folder Include="MLM" />
     <Folder Include="MLM\Tables" />
     <Folder Include="MLM\Stored Procs" />
+    <Folder Include="MLM\Views" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="TimerToy_tt\tt_schema.sql" />
@@ -178,6 +179,7 @@
     <Build Include="MLM\Tables\Users.sql" />
     <Build Include="MLM\Stored Procs\AddUser.sql" />
     <Build Include="MLM\Stored Procs\GetUsers.sql" />
+    <Build Include="MLM\Views\UplineView.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWK_II.refactorlog" />
