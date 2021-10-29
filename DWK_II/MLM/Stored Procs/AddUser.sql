@@ -19,7 +19,7 @@ begin
 
 -- first insert new user
 insert into mlm.Users (UserName, UplineName)
-select @UserName, @UplineName
+select upper(@UserName), @UplineName
 ;
 
 -- now update the downline count.

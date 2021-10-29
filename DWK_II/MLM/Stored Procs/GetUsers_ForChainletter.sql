@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [mlm].[GetUsers_ForChainletter]
+﻿CREATE PROCEDURE [mlm].[GetUsers_ForChainLetter]
 	@UserName nvarchar(50)
 AS
 

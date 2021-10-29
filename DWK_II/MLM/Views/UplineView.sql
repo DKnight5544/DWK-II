@@ -3,6 +3,7 @@
 select 
 	  u1.UserName
 	, u1.DownlineCount
+	, u1.ClickCount
 	, u1Name = nullif(u1.UplineName, 'TOP')
 	, u2Name = nullif(u2.UplineName, 'TOP')
 	, u3Name = nullif(u3.UplineName, 'TOP')

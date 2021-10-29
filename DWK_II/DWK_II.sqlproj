@@ -180,7 +180,9 @@
     <Build Include="MLM\Stored Procs\AddUser.sql" />
     <Build Include="MLM\Stored Procs\GetUsers.sql" />
     <Build Include="MLM\Views\UplineView.sql" />
-    <Build Include="MLM\Stored Procs\GetUsers_ForChainletter.sql" />
+    <Build Include="MLM\Stored Procs\GetUsers_ForChainLetter.sql" />
+    <Build Include="MLM\Stored Procs\AddClick.sql" />
+    <Build Include="MLM\Stored Procs\AddSampleData.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWK_II.refactorlog" />

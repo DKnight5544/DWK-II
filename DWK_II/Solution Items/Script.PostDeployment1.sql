@@ -36,4 +36,6 @@ grant execute on ds.GetPotentialBuyers to TimerToysApp
 
 -- MLM
 grant execute on mlm.AddUser to TimerToysApp
+grant execute on mlm.AddClick to TimerToysApp
 grant execute on mlm.GetUsers to TimerToysApp
+grant execute on mlm.GetUsers_ForChainLetter to TimerToysApp
