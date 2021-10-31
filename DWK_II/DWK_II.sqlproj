@@ -137,6 +137,10 @@
     <Folder Include="MLM\Tables" />
     <Folder Include="MLM\Stored Procs" />
     <Folder Include="MLM\Views" />
+    <Folder Include="ORG" />
+    <Folder Include="ORG\Stored Procs" />
+    <Folder Include="ORG\Tables" />
+    <Folder Include="ORG\Views" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="TimerToy_tt\tt_schema.sql" />
@@ -175,14 +179,18 @@
     <Build Include="DomainSales\Tables\PotentialBuyer.sql" />
     <Build Include="DomainSales\Stored Procedures\AddPotentialBuyer.sql" />
     <Build Include="DomainSales\Stored Procedures\GetPotentialBuyers.sql" />
-    <Build Include="MLM\mlm_schema.sql" />
     <Build Include="MLM\Tables\Users.sql" />
     <Build Include="MLM\Stored Procs\AddUser.sql" />
-    <Build Include="MLM\Stored Procs\GetUsers.sql" />
-    <Build Include="MLM\Views\UplineView.sql" />
-    <Build Include="MLM\Stored Procs\GetUsers_ForChainLetter.sql" />
-    <Build Include="MLM\Stored Procs\AddClick.sql" />
+    <Build Include="MLM\Views\UserModel.sql" />
+    <Build Include="MLM\Stored Procs\GetUser.sql" />
     <Build Include="MLM\Stored Procs\AddSampleData.sql" />
+    <Build Include="ORG\Stored Procs\AddSampleData.sql" />
+    <Build Include="ORG\Stored Procs\AddUser.sql" />
+    <Build Include="ORG\Stored Procs\GetUser.sql" />
+    <Build Include="ORG\Tables\User.sql" />
+    <Build Include="ORG\Views\UserModel.sql" />
+    <Build Include="MLM\mlm_schema.sql" />
+    <Build Include="ORG\CreateSchema.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWK_II.refactorlog" />

@@ -1,9 +1,7 @@
 ﻿CREATE TABLE [mlm].[Users]
 (
 	  [UserName] nvarchar(50) NOT NULL
-	, [UplineName] nvarchar(50) NOT null 
-	, [DownlineCount] int Not Null Default(0)
-	, [ClickCount] int Not Null Default(0)
+	, [UplineName] nvarchar(50) NOT null
 	, [InsertDate] datetime not null DEFAULT getdate()
     CONSTRAINT [PK_Users] PRIMARY KEY ([UserName])
 )

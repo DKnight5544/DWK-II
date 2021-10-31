@@ -17,21 +17,9 @@ and exists(
 
 begin    
 
--- first insert new user
-insert into mlm.Users (UserName, UplineName)
-select upper(@UserName), @UplineName
-;
-
--- now update the downline count.
-update u set u.DownlineCount += 1 from mlm.Users u where u.UserName = @UplineName;
-select @UplineName = u.UplineName from mlm.Users u where u.UserName = @UplineName;
-update u set u.DownlineCount += 1 from mlm.Users u where u.UserName = @UplineName;
-select @UplineName = u.UplineName from mlm.Users u where u.UserName = @UplineName;
-update u set u.DownlineCount += 1 from mlm.Users u where u.UserName = @UplineName;
-select @UplineName = u.UplineName from mlm.Users u where u.UserName = @UplineName;
-update u set u.DownlineCount += 1 from mlm.Users u where u.UserName = @UplineName;
-select @UplineName = u.UplineName from mlm.Users u where u.UserName = @UplineName;
-update u set u.DownlineCount += 1 from mlm.Users u where u.UserName = @UplineName;
+	-- first insert new user
+	insert into mlm.Users (UserName, UplineName)
+	select upper(@UserName), upper(@UplineName)
+	;
 
 end
-
