@@ -41,5 +41,6 @@ grant view definition on mlm.UserModel to TimerToysApp
 
 -- ORG
 grant execute on org.AddUser to TimerToysApp
+grant execute on org.AddBadge to TimerToysApp
 grant execute on org.GetUser to TimerToysApp
 grant view definition on org.UserModel to TimerToysApp

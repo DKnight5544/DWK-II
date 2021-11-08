@@ -124,7 +124,6 @@
     <Folder Include="TimerToy_tt\Stored Procedures" />
     <Folder Include="TimerToy_tt\Views" />
     <Folder Include="TimerToy_tt\Functions" />
-    <Folder Include="Solution Items" />
     <Folder Include="TimerToy_tt2" />
     <Folder Include="TimerToy_tt2\Functions" />
     <Folder Include="TimerToy_tt2\Stored Procedures" />
@@ -141,61 +140,163 @@
     <Folder Include="ORG\Stored Procs" />
     <Folder Include="ORG\Tables" />
     <Folder Include="ORG\Views" />
+    <Folder Include="Security\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="TimerToy_tt\tt_schema.sql" />
     <Build Include="TimerToy_tt\Tables\Timer.sql" />
-    <Build Include="TimerToy_tt\Stored Procedures\InsertNewPage.sql" />
-    <Build Include="TimerToy_tt\Stored Procedures\InsertNewTimer.sql" />
-    <Build Include="TimerToy_tt\Views\vwSelectAll.sql" />
-    <Build Include="TimerToy_tt\Stored Procedures\ToggleTimer.sql" />
-    <Build Include="TimerToy_tt\Tables\Page.sql" />
-    <Build Include="TimerToy_tt\Stored Procedures\SelectAllByPage.sql" />
-    <Build Include="TimerToy_tt\Stored Procedures\UpdateTimerName.sql" />
-    <Build Include="TimerToy_tt\Stored Procedures\DeleteTimer.sql" />
-    <Build Include="TimerToy_tt\Stored Procedures\AdjustTimer.sql" />
-    <Build Include="TimerToy_tt\Stored Procedures\ResetTimer.sql" />
-    <Build Include="TimerToy_tt\Stored Procedures\UpdatePageName.sql" />
-    <Build Include="TimerToy_tt\Stored Procedures\SelectPageData.sql" />
-    <PostDeploy Include="Solution Items\Script.PostDeployment1.sql" />
+    <Build Include="TimerToy_tt\Stored Procedures\InsertNewPage.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt\Stored Procedures\InsertNewTimer.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt\Views\vwSelectAll.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt\Stored Procedures\ToggleTimer.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt\Tables\Page.sql">
+      <AnsiNulls>Off</AnsiNulls>
+    </Build>
+    <Build Include="TimerToy_tt\Stored Procedures\SelectAllByPage.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt\Stored Procedures\UpdateTimerName.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt\Stored Procedures\DeleteTimer.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt\Stored Procedures\AdjustTimer.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt\Stored Procedures\ResetTimer.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt\Stored Procedures\UpdatePageName.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt\Stored Procedures\SelectPageData.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
     <Build Include="TimerToy_tt2\Tables\Timer.sql" />
-    <Build Include="TimerToy_tt2\tt_schema.sql" />
-    <Build Include="TimerToy_tt2\Stored Procedures\AddRootTimer.sql" />
-    <Build Include="TimerToy_tt2\Stored Procedures\AddTimer.sql" />
-    <Build Include="TimerToy_tt2\Views\TimerModel.sql" />
-    <Build Include="TimerToy_tt2\Stored Procedures\GetTimer.sql" />
-    <Build Include="TimerToy_tt2\Stored Procedures\GetChildren.sql" />
-    <Build Include="TimerToy_tt2\Stored Procedures\ToggleTimer.sql" />
+    <Build Include="TimerToy_tt2\Stored Procedures\AddRootTimer.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt2\Stored Procedures\AddTimer.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt2\Views\TimerModel.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt2\Stored Procedures\GetTimer.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt2\Stored Procedures\GetChildren.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt2\Stored Procedures\ToggleTimer.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
     <Build Include="TimerToy_tt2\Functions\GetElapsedTime.sql" />
     <Build Include="TimerToy_tt2\Functions\GetChildCount.sql" />
-    <Build Include="TimerToy_tt2\Stored Procedures\AdustTimer.sql" />
-    <Build Include="TimerToy_tt2\Stored Procedures\ResetTimer.sql" />
-    <Build Include="TimerToy_tt2\Stored Procedures\DeleteTimer.sql" />
-    <Build Include="TimerToy_tt2\Stored Procedures\RenameTimer.sql" />
+    <Build Include="TimerToy_tt2\Stored Procedures\AdustTimer.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt2\Stored Procedures\ResetTimer.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt2\Stored Procedures\DeleteTimer.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt2\Stored Procedures\RenameTimer.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
     <Build Include="TimerToy_tt2\Tables\ParentChild.sql" />
     <Build Include="TimerToy_tt2\Views\ElapsedTimeView.sql" />
     <Build Include="TimerToy_tt2\Views\SelectAllView.sql" />
     <Build Include="DomainSales\ds_schema.sql" />
     <Build Include="DomainSales\Tables\PotentialBuyer.sql" />
-    <Build Include="DomainSales\Stored Procedures\AddPotentialBuyer.sql" />
-    <Build Include="DomainSales\Stored Procedures\GetPotentialBuyers.sql" />
+    <Build Include="DomainSales\Stored Procedures\AddPotentialBuyer.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="DomainSales\Stored Procedures\GetPotentialBuyers.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
     <Build Include="MLM\Tables\Users.sql" />
-    <Build Include="MLM\Stored Procs\AddUser.sql" />
-    <Build Include="MLM\Views\UserModel.sql" />
-    <Build Include="MLM\Stored Procs\GetUser.sql" />
+    <Build Include="MLM\Stored Procs\AddUser.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="MLM\Views\UserModel.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="MLM\Stored Procs\GetUser.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
     <Build Include="MLM\Stored Procs\AddSampleData.sql" />
-    <Build Include="ORG\Stored Procs\AddSampleData.sql" />
-    <Build Include="ORG\Stored Procs\AddUser.sql" />
-    <Build Include="ORG\Stored Procs\GetUser.sql" />
-    <Build Include="ORG\Tables\User.sql" />
-    <Build Include="ORG\Views\UserModel.sql" />
+    <Build Include="ORG\Stored Procs\AddSampleData.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="ORG\Stored Procs\AddUser.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="ORG\Stored Procs\GetUser.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="ORG\Tables\User.sql">
+      <AnsiNulls>Off</AnsiNulls>
+    </Build>
+    <Build Include="ORG\Views\UserModel.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
     <Build Include="MLM\mlm_schema.sql" />
     <Build Include="ORG\CreateSchema.sql" />
+    <PostDeploy Include="Security\Script.PostDeployment1.sql" />
+    <Build Include="TimerToy_tt2\tt2_schema.sql" />
+    <Build Include="ORG\Stored Procs\AddBadge.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="ORG\Tables\Trans.sql">
+      <AnsiNulls>Off</AnsiNulls>
+    </Build>
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DWK_II.refactorlog" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Solution Items\users.private" />
+    <None Include="Security\users.private" />
   </ItemGroup>
 </Project>

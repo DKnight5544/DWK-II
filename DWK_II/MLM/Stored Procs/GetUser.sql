@@ -6,3 +6,5 @@ select *
 from mlm.UserModel v
 where v.UserName = @UserName
 ;
+
+GO

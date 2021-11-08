@@ -15,4 +15,3 @@ from tt.vwSelectAll a
 where a.TimerKey = @TimerKey;
 
 return 0;
-

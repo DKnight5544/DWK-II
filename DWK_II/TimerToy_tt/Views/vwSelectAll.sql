@@ -12,3 +12,4 @@ select
 from tt.[Page] p
 join tt.Timer t on t.PageKey = p.PageKey
 ;
+GO

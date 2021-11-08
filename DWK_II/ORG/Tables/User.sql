@@ -1,11 +1,12 @@
-﻿CREATE TABLE [org].[User]
-(
-	  [UserName] nvarchar(50) NOT NULL
-	, [SponsorName] nvarchar(50) NOT null
-	, [OwnerName] nvarchar(50) NOT null
-	, [InsertDate] datetime not null DEFAULT getdate()
-    CONSTRAINT [PK_Users] PRIMARY KEY ([UserName])
-)
+﻿CREATE TABLE [org].[User] (
+    [UserName]    NVARCHAR (50) NOT NULL,
+    [SponsorName] NVARCHAR (50) NOT NULL,
+    [OwnerName]   NVARCHAR (50) NOT NULL,
+    [BadgeCount] int NOT NULL DEFAULT(0),
+    CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED ([UserName] ASC)
+);
+
+
 
 GO
 
@@ -15,5 +16,5 @@ GO
 CREATE INDEX [IX_Users_OwnerName] ON [org].[User] ([OwnerName])
 GO
 
-CREATE INDEX [IX_Users_InsertDate] ON [org].[User] ([InsertDate])
+
 GO

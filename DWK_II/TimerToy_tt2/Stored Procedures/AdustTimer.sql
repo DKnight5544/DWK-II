@@ -29,3 +29,5 @@ and @IsReadOnly = 0;
 exec tt2.GetTimer @Key
 
 RETURN 0
+
+GO

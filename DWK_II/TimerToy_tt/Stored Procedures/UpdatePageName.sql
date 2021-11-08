@@ -10,4 +10,3 @@ where u.PageKey = @PageKey
 ;
 
 return 0;
-

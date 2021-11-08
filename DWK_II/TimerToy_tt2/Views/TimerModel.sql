@@ -11,3 +11,5 @@ select
 	, CreationTime = convert(datetime, null)
 	, ElapsedTime =  convert(int, null)
 	, IsReadOnly = convert(bit, null)
+
+GO

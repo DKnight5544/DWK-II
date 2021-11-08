@@ -19,3 +19,5 @@ on t.TimerKey = pc.ChildKey or t.ReadOnlyKey = pc.ChildKey
 where pc.ParentKey = @ParentKey
 
 RETURN 0
+
+GO

@@ -224,4 +224,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="UplineName" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="0be1e5e2-6dfe-409e-8b3b-c07c5b21923e" ChangeDateTime="11/06/2021 17:37:21">
+    <Property Name="ElementName" Value="[org].[User].[InsertDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[org].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BadgeCount" />
+  </Operation>
 </Operations>
