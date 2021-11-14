@@ -18,7 +18,7 @@ begin
    
 
 	insert into org.[User] (UserName, SponsorName, OwnerName)
-	select upper(@UserName), upper(@SponsorName), upper(@OwnerName)
+	select @UserName, @SponsorName, @OwnerName
 	where not exists (
 		select 1
 		from org.[User] u
