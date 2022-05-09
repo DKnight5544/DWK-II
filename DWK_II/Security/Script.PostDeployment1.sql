@@ -1,46 +1,25 @@
 ﻿
 
 -- TimerToys
-grant view definition on tt.vwSelectAll to TimerToysApp
-grant view definition on tt.[Page] to TimerToysApp
+grant execute on tt.InsertPage to TimerToysApp
+grant execute on tt.SelectPage to TimerToysApp
+grant execute on tt.UpdatePageName to TimerToysApp
+grant view definition on tt.PageModel to TimerToysApp
 
 grant execute on tt.AdjustTimer to TimerToysApp
 grant execute on tt.DeleteTimer to TimerToysApp
-grant execute on tt.InsertNewPage to TimerToysApp
-grant execute on tt.InsertNewTimer to TimerToysApp
+grant execute on tt.InsertTimer to TimerToysApp
 grant execute on tt.ResetTimer to TimerToysApp
-grant execute on tt.SelectAllByPage to TimerToysApp
+grant execute on tt.SelectTimers to TimerToysApp
 grant execute on tt.ToggleTimer to TimerToysApp
-grant execute on tt.UpdatePageName to TimerToysApp
 grant execute on tt.UpdateTimerName to TimerToysApp
-grant execute on tt.SelectPageData to TimerToysApp
+grant view definition on tt.TimerModel to TimerToysApp
 
--- TT2
+grant execute on tt.DeleteLink to TimerToysApp
+grant execute on tt.InsertLink to TimerToysApp
+grant execute on tt.SelectLinks to TimerToysApp
+grant execute on tt.UpdateLinkName to TimerToysApp
+grant execute on tt.UpdateLinkUrl to TimerToysApp
+grant view definition on tt.LinkModel to TimerToysApp
 
-grant view definition on tt2.TimerModel to TimerToysApp
 
-grant execute on tt2.AddRootTimer to TimerToysApp
-grant execute on tt2.AddTimer to TimerToysApp
-grant execute on tt2.GetChildren to TimerToysApp
-grant execute on tt2.GetTimer to TimerToysApp
-grant execute on tt2.ToggleTimer to TimerToysApp
-
-grant execute on tt2.AdjustTimer to TimerToysApp
-grant execute on tt2.ResetTimer to TimerToysApp
-grant execute on tt2.DeleteTimer to TimerToysApp
-grant execute on tt2.RenameTimer to TimerToysApp
-
--- Domain Sales
-grant execute on ds.AddPotentialBuyer to TimerToysApp
-grant execute on ds.GetPotentialBuyers to TimerToysApp
-
--- MLM
-grant execute on mlm.AddUser to TimerToysApp
-grant execute on mlm.GetUser to TimerToysApp
-grant view definition on mlm.UserModel to TimerToysApp
-
--- ORG
-grant execute on org.AddUser to TimerToysApp
-grant execute on org.AddBadge to TimerToysApp
-grant execute on org.GetUser to TimerToysApp
-grant view definition on org.UserModel to TimerToysApp

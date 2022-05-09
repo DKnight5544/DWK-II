@@ -1,17 +1,15 @@
 ﻿CREATE PROCEDURE [tt].[UpdateTimerName]
-	@TimerKey char(36),
-	@TimerDescription nvarchar(150)
+	  @PageKey char(36)
+	, @TimerKey char(36)
+	, @TimerName nvarchar(150)
 AS
 
-
 update t set
-	TimerDescription = ltrim(rtrim(@TimerDescription))
+	TimerName = ltrim(rtrim(@TimerName))
 from tt.Timer t
+join tt.[Page] p on p.PageKey = t.PageKey
 where t.TimerKey = @TimerKey
+and p.PageKey = @PageKey
 ;
-
-select *
-from tt.vwSelectAll a
-where a.TimerKey = @TimerKey;
 
 return 0;

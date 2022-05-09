@@ -231,4 +231,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="BadgeCount" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="3938b0da-e657-4f22-8385-8e74a7fe8262" ChangeDateTime="05/01/2022 23:51:42">
+    <Property Name="ElementName" Value="[tt].[Timer].[TimerDescription]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[tt].[Timer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TimerName" />
+  </Operation>
 </Operations>

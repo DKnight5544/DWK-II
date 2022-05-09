@@ -1,36 +1,20 @@
 ﻿CREATE PROCEDURE [tt].[ToggleTimer]
-	  @TimerKey char(36)
+	  @PageKey char(36)
+	, @TimerKey char(36)
 AS
 
-declare @IsRunning bit = (select t.IsRunning from Timer t where t.TimerKey = @TimerKey);
+declare @elapsedTime int;
 
-if(@IsRunning = 0) begin
-
-	-- timer is toggeling to ON
-	update t set
-		  t.StartTime   = getutcdate()
-		, t.IsRunning   = 1
-	from tt.Timer t
-	where t.TimerKey = @TimerKey
-
-
-end
-
-else begin 
-
--- timer is toggeling to OFF
 update t set
-	  t.ElapsedTime = t.ElapsedTime + datediff(second, t.StartTime, getutcdate())
-	, t.StartTime   = null
-	, t.IsRunning   = 0
+		t.StartTime = iif(t.StartTime is null, GETUTCDATE(), null)
+		, t.ElapsedTime = iif(
+			t.StartTime is null, t.ElapsedTime
+			, datediff(second, t.StartTime, getutcdate()) + t.ElapsedTime
+			)
 from tt.Timer t
+join tt.[Page] p on p.PageKey = t.PageKey
 where t.TimerKey = @TimerKey
+and p.PageKey = @PageKey
 ;
-
-end
-
-select *
-from tt.vwSelectAll a
-where a.TimerKey = @TimerKey;
 
 return 0;

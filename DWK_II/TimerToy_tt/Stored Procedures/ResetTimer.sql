@@ -1,19 +1,15 @@
 ﻿CREATE PROCEDURE [tt].[ResetTimer]
-	@TimerKey char(36)
+	  @PageKey char(36)
+	, @TimerKey char(36)
 AS
+
 
 update t set
 	  t.ElapsedTime = 0
-	, t.IsRunning = 0
-	, t.StartTime = null
-
+	  , t.StartTime = null
 from tt.Timer t
+join tt.[Page] p on p.PageKey = @PageKey
 where t.TimerKey = @TimerKey
 ;
 
-
-select *
-from tt.vwSelectAll a
-where a.TimerKey = @TimerKey;
-
-RETURN 0
+return 0;

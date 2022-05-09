@@ -6,6 +6,7 @@ AS
 update u set
 	u.PageName = ltrim(rtrim(@PageName))
 from tt.Page u 
+-- ReadOnly Page Key will get ignored.
 where u.PageKey = @PageKey
 ;
 
