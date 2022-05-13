@@ -1,6 +1,6 @@
 ﻿CREATE PROCEDURE [tt].[ToggleTimer]
 	  @PageKey char(36)
-	, @TimerKey char(36)
+	, @TimerKey int
 AS
 
 declare @elapsedTime int;

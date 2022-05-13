@@ -1,6 +1,6 @@
 ﻿CREATE PROCEDURE [tt].[UpdateTimerName]
 	  @PageKey char(36)
-	, @TimerKey char(36)
+	, @TimerKey int
 	, @TimerName nvarchar(150)
 AS
 

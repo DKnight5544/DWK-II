@@ -1,6 +1,6 @@
 ﻿CREATE PROCEDURE [tt].[AdjustTimer]
 	  @PageKey char(36)
-	, @TimerKey char(36)
+	, @TimerKey int
 	, @Offset int
 AS
 

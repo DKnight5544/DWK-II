@@ -1,6 +1,6 @@
 ﻿CREATE PROCEDURE [tt].[ResetTimer]
 	  @PageKey char(36)
-	, @TimerKey char(36)
+	, @TimerKey int
 AS
 
 

@@ -1,6 +1,6 @@
 ﻿CREATE PROCEDURE [tt].[UpdateLinkUrl]
 	  @PageKey char(36)
-	, @LinkKey char(36)
+	, @LinkKey int
 	, @LinkUrl nvarchar(max)
 AS
 
