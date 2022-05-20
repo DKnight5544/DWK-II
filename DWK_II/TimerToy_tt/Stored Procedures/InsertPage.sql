@@ -9,9 +9,10 @@ insert into tt.[Page](PageKey, ReadOnlyKey, PageName)
 select 
 	  @PageKey
 	, @ReadOnlyKey
-	, 'Bookmark this Page - Click To Edit'
+	, 'Save This Page'
 ;
 
 select PageKey = @PageKey
 
 return 0;
+GO

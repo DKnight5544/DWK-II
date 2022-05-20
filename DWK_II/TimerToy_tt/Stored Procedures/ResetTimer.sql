@@ -13,3 +13,5 @@ where t.TimerKey = @TimerKey
 ;
 
 return 0;
+
+GO

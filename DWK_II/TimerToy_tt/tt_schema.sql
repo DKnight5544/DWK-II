@@ -1,5 +1,7 @@
 ﻿CREATE SCHEMA [tt]
-    AUTHORIZATION [dbo]
+    AUTHORIZATION [dbo];
+
+
 
 GO
 

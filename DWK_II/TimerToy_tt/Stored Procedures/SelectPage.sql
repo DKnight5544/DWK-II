@@ -11,3 +11,4 @@ AS
 	where @PageKey in (p.PageKey, p.ReadOnlyKey)
 
 RETURN 0
+GO

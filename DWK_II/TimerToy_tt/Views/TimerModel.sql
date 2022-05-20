@@ -6,3 +6,4 @@ select
 	, t.IsRunning
 	, t.ElapsedTime
 from tt.TimerView t
+GO

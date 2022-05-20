@@ -6,3 +6,4 @@ select
 	, p.PageName
 	, IsReadOnly = convert(bit, 0)
 from tt.[Page] p
+GO

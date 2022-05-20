@@ -160,7 +160,6 @@
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
-    <PostDeploy Include="Security\Script.PostDeployment1.sql" />
     <Build Include="TimerToy_tt\Stored Procedures\ToggleTimer.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
@@ -178,8 +177,14 @@
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
     <Build Include="TimerToy_tt\Views\TimerView.sql" />
-    <Build Include="TimerToy_tt\Views\TimerModel.sql" />
-    <Build Include="TimerToy_tt\Views\PageModel.sql" />
+    <Build Include="TimerToy_tt\Views\TimerModel.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="TimerToy_tt\Views\PageModel.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
     <Build Include="TimerToy_tt\Tables\Link.sql" />
     <Build Include="TimerToy_tt\Stored Procedures\SelectTimers.sql">
       <AnsiNulls>Off</AnsiNulls>
@@ -193,7 +198,10 @@
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
-    <Build Include="TimerToy_tt\Views\LinkModel.sql" />
+    <Build Include="TimerToy_tt\Views\LinkModel.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
     <Build Include="TimerToy_tt\Stored Procedures\UpdateLinkUrl.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
@@ -204,5 +212,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Security\users.private" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Security\Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>

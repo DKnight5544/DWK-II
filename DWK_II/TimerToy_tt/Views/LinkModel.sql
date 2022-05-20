@@ -5,3 +5,4 @@ select
 	, l.LinkName
 	, l.LinkUrl
 from tt.Link l
+GO
